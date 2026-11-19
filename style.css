@@ -724,9 +724,9 @@ body.dark-mode .logo-text .text-plus {
 }
 
 .mini-price-row .price {
-    font-size: 14px;
-    font-weight: bold;
-    color: #333;
+    font-size: 18px;
+    font-weight: 900;
+    color: #111;
 }
 
 .mini-price-row .add-to-cart-btn {
@@ -2221,7 +2221,7 @@ body.dark-mode .breadcrumb .current {
     /* تنسيق قسم البانر والمنتجات ليكون تحت بعضه بنفس ترتيب الصور (الجزء الأول - ads-45) */
     section#banner-products-slider[data-section-id="ads-45"],
     section#banner-products-slider[data-section-id="ads-45"] * {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Tajawal', sans-serif;
     }
 
     section#banner-products-slider[data-section-id="ads-45"] {
@@ -2305,34 +2305,43 @@ body.dark-mode .breadcrumb .current {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
         background-color: #ffffff;
-        border: 1px solid #eceff3;
-        border-radius: 10px;
-        padding: 12px;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        border: 1px solid #f5f5f5;
+        border-radius: 8px;
+        padding: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-sizing: border-box;
     }
 
     section#banner-products-slider[data-section-id="ads-45"] .item_content:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        transform: none;
     }
 
     section#banner-products-slider[data-section-id="ads-45"] .product-slider-wrapper .item .image {
-        background-color: #f8fafc;
-        border-radius: 8px;
-        padding: 8px;
+        background-color: transparent !important;
+        background: transparent !important;
+        border-radius: 0;
+        padding: 0;
         margin-bottom: 10px;
         text-align: center;
+        height: 120px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     section#banner-products-slider[data-section-id="ads-45"] .product-slider-wrapper .item .image img {
-        aspect-ratio: 1 / 1;
         width: 100%;
-        height: auto;
-        max-height: 150px;
-        object-fit: contain;
+        height: 120px !important;
+        max-height: 120px !important;
+        object-fit: contain !important;
         display: block;
         margin: 0 auto;
+        aspect-ratio: auto !important;
     }
 
     section#banner-products-slider[data-section-id="ads-45"] .item_desc {
@@ -2340,58 +2349,89 @@ body.dark-mode .breadcrumb .current {
         flex-direction: column;
         flex: 1;
         justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 100%;
     }
 
     section#banner-products-slider[data-section-id="ads-45"] .item_desc a,
     section#banner-products-slider[data-section-id="ads-45"] .item_desc a:hover,
-    section#banner-products-slider[data-section-id="ads-45"] .separator,
+    section#banner-products-slider[data-section-id="ads-45"] .separator {
+        text-decoration: none !important;
+        border-bottom: none !important;
+        text-align: center !important;
+        width: 100%;
+        display: block;
+    }
+
     section#banner-products-slider[data-section-id="ads-45"] .product-details--title,
     section#banner-products-slider[data-section-id="ads-45"] .product-details--title span {
         text-decoration: none !important;
         border-bottom: none !important;
+        text-align: center !important;
     }
 
     section#banner-products-slider[data-section-id="ads-45"] .product-details--title {
-        font-size: 14px;
-        color: #444;
-        font-weight: 600;
-        line-height: 1.4;
-        margin-bottom: 10px;
-        height: 40px;
+        font-size: 13px !important;
+        color: #333 !important;
+        font-weight: 500 !important;
+        line-height: 1.35 !important;
+        margin-bottom: 5px !important;
+        height: 35px !important;
         overflow: hidden;
+        text-align: center !important;
         text-decoration: none !important;
+        display: block;
+        width: 100%;
+    }
+
+    section#banner-products-slider[data-section-id="ads-45"] .product-details--title span {
+        font-size: 13px !important;
+        color: #333 !important;
+        font-weight: 500 !important;
+        text-align: center !important;
     }
 
     section#banner-products-slider[data-section-id="ads-45"] .offer_price {
-        font-size: 15px;
-        font-weight: 700;
-        color: #111827;
-        margin-bottom: 10px;
+        font-size: 18px !important;
+        font-weight: 900 !important;
+        color: #111 !important;
+        margin-bottom: 8px !important;
+        text-align: center !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 4px;
+        width: 100%;
+    }
+
+    section#banner-products-slider[data-section-id="ads-45"] .offer_price span {
+        font-size: 18px !important;
+        font-weight: 900 !important;
+        color: #111 !important;
+        text-align: center !important;
     }
 
     section#banner-products-slider[data-section-id="ads-45"] .add-to-cart.cart-slider-btn,
-    section#banner-products-slider[data-section-id="ads-45"] .add-to-cart.cart-slider-btn:hover,
-    section#banner-products-slider[data-section-id="ads-45"] .add-to-cart.cart-slider-btn:active,
-    section#banner-products-slider[data-section-id="ads-45"] .add-to-cart.cart-slider-btn:focus {
-        background-color: #ECF8F7;
-        border-color: #ECF8F7;
-        color: #007C4B;
-    }
-
     section#banner-products-slider[data-section-id="ads-45"] .add-to-cart {
-        background-color: #00b074;
-        color: #ffffff;
-        border: none;
-        border-radius: 8px;
-        padding: 9px 12px;
-        font-size: 13px;
-        font-weight: 700;
-        cursor: pointer;
-        transition: background-color 0.2s ease;
+        background-color: #10b981 !important;
+        color: #ffffff !important;
+        border: none !important;
+        border-radius: 5px !important;
+        padding: 10px 0 !important;
+        font-family: 'Tajawal', sans-serif !important;
+        font-size: 14px !important;
+        font-weight: bold !important;
+        width: 100% !important;
+        cursor: pointer !important;
+        transition: background-color 0.3s ease !important;
+        text-align: center !important;
     }
 
+    section#banner-products-slider[data-section-id="ads-45"] .add-to-cart.cart-slider-btn:hover,
     section#banner-products-slider[data-section-id="ads-45"] .add-to-cart:hover {
-        background-color: #009461;
+        background-color: #059669 !important;
+        color: #ffffff !important;
     }
 
     @media (max-width: 1024px) {
@@ -2409,7 +2449,7 @@ body.dark-mode .breadcrumb .current {
     /* تنسيق قسم منتجات البشرة الأكثر مبيعًا (ads-17) كـ Carousel أفقي */
     .product-slider-wrapper[data-section-id="ads-17"],
     .product-slider-wrapper[data-section-id="ads-17"] * {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Tajawal', sans-serif;
     }
 
     .product-slider-wrapper[data-section-id="ads-17"] {
@@ -2519,34 +2559,44 @@ body.dark-mode .breadcrumb .current {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
         background-color: #ffffff;
-        border-radius: 10px;
+        border: 1px solid #f5f5f5;
+        border-radius: 8px;
         padding: 10px;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        text-align: center;
+        transition: 0.3s;
+        box-sizing: border-box;
     }
 
     .product-slider-wrapper[data-section-id="ads-17"] .item_content:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        transform: none;
     }
 
     .product-slider-wrapper[data-section-id="ads-17"] .product-slider-wrapper .item .image {
         position: relative;
-        background-color: #f5f6f8;
-        border-radius: 8px;
-        padding: 10px;
-        margin-bottom: 12px;
+        background-color: transparent !important;
+        background: transparent !important;
+        border-radius: 0;
+        padding: 0;
+        margin-bottom: 10px;
         text-align: center;
+        height: 120px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .product-slider-wrapper[data-section-id="ads-17"] .product-slider-wrapper .item .image img {
-        aspect-ratio: 1 / 1;
         width: 100%;
-        height: auto;
-        max-height: 155px;
-        object-fit: contain;
+        height: 120px !important;
+        max-height: 120px !important;
+        object-fit: contain !important;
         display: block;
         margin: 0 auto;
+        aspect-ratio: auto !important;
     }
 
     /* بادج كمية محدودة */
@@ -2556,10 +2606,11 @@ body.dark-mode .breadcrumb .current {
         left: 6px;
         background-color: #fde8e8;
         color: #c81e1e;
-        font-size: 12px;
+        font-size: 11px;
         font-weight: 700;
-        padding: 3px 10px;
-        border-radius: 6px;
+        padding: 2px 8px;
+        border-radius: 4px;
+        z-index: 2;
     }
 
     .product-slider-wrapper[data-section-id="ads-17"] .item_desc {
@@ -2567,58 +2618,89 @@ body.dark-mode .breadcrumb .current {
         flex-direction: column;
         flex: 1;
         justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 100%;
     }
 
     .product-slider-wrapper[data-section-id="ads-17"] .item_desc a,
     .product-slider-wrapper[data-section-id="ads-17"] .item_desc a:hover,
-    .product-slider-wrapper[data-section-id="ads-17"] .separator,
+    .product-slider-wrapper[data-section-id="ads-17"] .separator {
+        text-decoration: none !important;
+        border-bottom: none !important;
+        text-align: center !important;
+        width: 100%;
+        display: block;
+    }
+
     .product-slider-wrapper[data-section-id="ads-17"] .product-details--title,
     .product-slider-wrapper[data-section-id="ads-17"] .product-details--title span {
         text-decoration: none !important;
         border-bottom: none !important;
+        text-align: center !important;
     }
 
     .product-slider-wrapper[data-section-id="ads-17"] .product-details--title {
-        font-size: 14px;
-        color: #444;
-        font-weight: 600;
-        line-height: 1.4;
-        margin-bottom: 10px;
-        height: 40px;
+        font-size: 13px !important;
+        color: #333 !important;
+        font-weight: 500 !important;
+        line-height: 1.35 !important;
+        margin-bottom: 5px !important;
+        height: 35px !important;
         overflow: hidden;
+        text-align: center !important;
         text-decoration: none !important;
+        display: block;
+        width: 100%;
+    }
+
+    .product-slider-wrapper[data-section-id="ads-17"] .product-details--title span {
+        font-size: 13px !important;
+        color: #333 !important;
+        font-weight: 500 !important;
+        text-align: center !important;
     }
 
     .product-slider-wrapper[data-section-id="ads-17"] .offer_price {
-        font-size: 15px;
-        font-weight: 700;
-        color: #111827;
-        margin-bottom: 10px;
+        font-size: 18px !important;
+        font-weight: 900 !important;
+        color: #111 !important;
+        margin-bottom: 8px !important;
+        text-align: center !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 4px;
+        width: 100%;
+    }
+
+    .product-slider-wrapper[data-section-id="ads-17"] .offer_price span {
+        font-size: 18px !important;
+        font-weight: 900 !important;
+        color: #111 !important;
+        text-align: center !important;
     }
 
     .product-slider-wrapper[data-section-id="ads-17"] .add-to-cart.cart-slider-btn,
-    .product-slider-wrapper[data-section-id="ads-17"] .add-to-cart.cart-slider-btn:hover,
-    .product-slider-wrapper[data-section-id="ads-17"] .add-to-cart.cart-slider-btn:active,
-    .product-slider-wrapper[data-section-id="ads-17"] .add-to-cart.cart-slider-btn:focus {
-        background-color: #ECF8F7;
-        border-color: #ECF8F7;
-        color: #007C4B;
-    }
-
     .product-slider-wrapper[data-section-id="ads-17"] .add-to-cart {
-        background-color: #00b074;
-        color: #ffffff;
-        border: none;
-        border-radius: 8px;
-        padding: 9px 12px;
-        font-size: 13px;
-        font-weight: 700;
-        cursor: pointer;
-        transition: background-color 0.2s ease;
+        background-color: #10b981 !important;
+        color: #ffffff !important;
+        border: none !important;
+        border-radius: 5px !important;
+        padding: 10px 0 !important;
+        font-family: 'Tajawal', sans-serif !important;
+        font-size: 14px !important;
+        font-weight: bold !important;
+        width: 100% !important;
+        cursor: pointer !important;
+        transition: background-color 0.3s ease !important;
+        text-align: center !important;
     }
 
+    .product-slider-wrapper[data-section-id="ads-17"] .add-to-cart.cart-slider-btn:hover,
     .product-slider-wrapper[data-section-id="ads-17"] .add-to-cart:hover {
-        background-color: #009461;
+        background-color: #059669 !important;
+        color: #ffffff !important;
     }
 
     /* أزرار التنقل الدائرية يمين وشمال الكاروسيل */
@@ -2683,7 +2765,7 @@ body.dark-mode .breadcrumb .current {
     /* تنسيق قسم البانر والمنتجات (ads-48) كـ Carousel أفقي */
     section#banner-products-slider[data-section-id="ads-48"],
     section#banner-products-slider[data-section-id="ads-48"] * {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Tajawal', sans-serif;
     }
 
     section#banner-products-slider[data-section-id="ads-48"] {
@@ -2783,34 +2865,43 @@ body.dark-mode .breadcrumb .current {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
         background-color: #ffffff;
-        border: 1px solid #eceff3;
-        border-radius: 10px;
-        padding: 12px;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        border: 1px solid #f5f5f5;
+        border-radius: 8px;
+        padding: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-sizing: border-box;
     }
 
     section#banner-products-slider[data-section-id="ads-48"] .item_content:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        transform: none;
     }
 
     section#banner-products-slider[data-section-id="ads-48"] .product-slider-wrapper .item .image {
-        background-color: #f8fafc;
-        border-radius: 8px;
-        padding: 8px;
+        background-color: transparent !important;
+        background: transparent !important;
+        border-radius: 0;
+        padding: 0;
         margin-bottom: 10px;
         text-align: center;
+        height: 120px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     section#banner-products-slider[data-section-id="ads-48"] .product-slider-wrapper .item .image img {
-        aspect-ratio: 1 / 1;
         width: 100%;
-        height: auto;
-        max-height: 150px;
-        object-fit: contain;
+        height: 120px !important;
+        max-height: 120px !important;
+        object-fit: contain !important;
         display: block;
         margin: 0 auto;
+        aspect-ratio: auto !important;
     }
 
     section#banner-products-slider[data-section-id="ads-48"] .item_desc {
@@ -2818,58 +2909,89 @@ body.dark-mode .breadcrumb .current {
         flex-direction: column;
         flex: 1;
         justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 100%;
     }
 
     section#banner-products-slider[data-section-id="ads-48"] .item_desc a,
     section#banner-products-slider[data-section-id="ads-48"] .item_desc a:hover,
-    section#banner-products-slider[data-section-id="ads-48"] .separator,
+    section#banner-products-slider[data-section-id="ads-48"] .separator {
+        text-decoration: none !important;
+        border-bottom: none !important;
+        text-align: center !important;
+        width: 100%;
+        display: block;
+    }
+
     section#banner-products-slider[data-section-id="ads-48"] .product-details--title,
     section#banner-products-slider[data-section-id="ads-48"] .product-details--title span {
         text-decoration: none !important;
         border-bottom: none !important;
+        text-align: center !important;
     }
 
     section#banner-products-slider[data-section-id="ads-48"] .product-details--title {
-        font-size: 14px;
-        color: #444;
-        font-weight: 600;
-        line-height: 1.4;
-        margin-bottom: 10px;
-        height: 40px;
+        font-size: 13px !important;
+        color: #333 !important;
+        font-weight: 500 !important;
+        line-height: 1.35 !important;
+        margin-bottom: 5px !important;
+        height: 35px !important;
         overflow: hidden;
+        text-align: center !important;
         text-decoration: none !important;
+        display: block;
+        width: 100%;
+    }
+
+    section#banner-products-slider[data-section-id="ads-48"] .product-details--title span {
+        font-size: 13px !important;
+        color: #333 !important;
+        font-weight: 500 !important;
+        text-align: center !important;
     }
 
     section#banner-products-slider[data-section-id="ads-48"] .offer_price {
-        font-size: 15px;
-        font-weight: 700;
-        color: #111827;
-        margin-bottom: 10px;
+        font-size: 18px !important;
+        font-weight: 900 !important;
+        color: #111 !important;
+        margin-bottom: 8px !important;
+        text-align: center !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 4px;
+        width: 100%;
+    }
+
+    section#banner-products-slider[data-section-id="ads-48"] .offer_price span {
+        font-size: 18px !important;
+        font-weight: 900 !important;
+        color: #111 !important;
+        text-align: center !important;
     }
 
     section#banner-products-slider[data-section-id="ads-48"] .add-to-cart.cart-slider-btn,
-    section#banner-products-slider[data-section-id="ads-48"] .add-to-cart.cart-slider-btn:hover,
-    section#banner-products-slider[data-section-id="ads-48"] .add-to-cart.cart-slider-btn:active,
-    section#banner-products-slider[data-section-id="ads-48"] .add-to-cart.cart-slider-btn:focus {
-        background-color: #ECF8F7;
-        border-color: #ECF8F7;
-        color: #007C4B;
-    }
-
     section#banner-products-slider[data-section-id="ads-48"] .add-to-cart {
-        background-color: #00b074;
-        color: #ffffff;
-        border: none;
-        border-radius: 8px;
-        padding: 9px 12px;
-        font-size: 13px;
-        font-weight: 700;
-        cursor: pointer;
-        transition: background-color 0.2s ease;
+        background-color: #10b981 !important;
+        color: #ffffff !important;
+        border: none !important;
+        border-radius: 5px !important;
+        padding: 10px 0 !important;
+        font-family: 'Tajawal', sans-serif !important;
+        font-size: 14px !important;
+        font-weight: bold !important;
+        width: 100% !important;
+        cursor: pointer !important;
+        transition: background-color 0.3s ease !important;
+        text-align: center !important;
     }
 
+    section#banner-products-slider[data-section-id="ads-48"] .add-to-cart.cart-slider-btn:hover,
     section#banner-products-slider[data-section-id="ads-48"] .add-to-cart:hover {
-        background-color: #009461;
+        background-color: #059669 !important;
+        color: #ffffff !important;
     }
 
     /* أزرار التنقل الدائرية يمين وشمال الكاروسيل */
@@ -3006,7 +3128,7 @@ body.dark-mode .breadcrumb .current {
     /* تنسيق قسم لها (ads-20) كـ Carousel أفقي */
     .product-slider-wrapper[data-section-id="ads-20"],
     .product-slider-wrapper[data-section-id="ads-20"] * {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Tajawal', sans-serif;
     }
 
     .product-slider-wrapper[data-section-id="ads-20"] {
@@ -3117,34 +3239,44 @@ body.dark-mode .breadcrumb .current {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
         background-color: #ffffff;
-        border-radius: 10px;
+        border: 1px solid #f5f5f5;
+        border-radius: 8px;
         padding: 10px;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        text-align: center;
+        transition: 0.3s;
+        box-sizing: border-box;
     }
 
     .product-slider-wrapper[data-section-id="ads-20"] .item_content:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        transform: none;
     }
 
     .product-slider-wrapper[data-section-id="ads-20"] .product-slider-wrapper .item .image {
         position: relative;
-        background-color: #f5f6f8;
-        border-radius: 8px;
-        padding: 10px;
-        margin-bottom: 12px;
+        background-color: transparent !important;
+        background: transparent !important;
+        border-radius: 0;
+        padding: 0;
+        margin-bottom: 10px;
         text-align: center;
+        height: 120px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .product-slider-wrapper[data-section-id="ads-20"] .product-slider-wrapper .item .image img {
-        aspect-ratio: 1 / 1;
         width: 100%;
-        height: auto;
-        max-height: 155px;
-        object-fit: contain;
+        height: 120px !important;
+        max-height: 120px !important;
+        object-fit: contain !important;
         display: block;
         margin: 0 auto;
+        aspect-ratio: auto !important;
     }
 
     .product-slider-wrapper[data-section-id="ads-20"] .item_desc {
@@ -3152,58 +3284,89 @@ body.dark-mode .breadcrumb .current {
         flex-direction: column;
         flex: 1;
         justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 100%;
     }
 
     .product-slider-wrapper[data-section-id="ads-20"] .item_desc a,
     .product-slider-wrapper[data-section-id="ads-20"] .item_desc a:hover,
-    .product-slider-wrapper[data-section-id="ads-20"] .separator,
+    .product-slider-wrapper[data-section-id="ads-20"] .separator {
+        text-decoration: none !important;
+        border-bottom: none !important;
+        text-align: center !important;
+        width: 100%;
+        display: block;
+    }
+
     .product-slider-wrapper[data-section-id="ads-20"] .product-details--title,
     .product-slider-wrapper[data-section-id="ads-20"] .product-details--title span {
         text-decoration: none !important;
         border-bottom: none !important;
+        text-align: center !important;
     }
 
     .product-slider-wrapper[data-section-id="ads-20"] .product-details--title {
-        font-size: 14px;
-        color: #444;
-        font-weight: 600;
-        line-height: 1.4;
-        margin-bottom: 10px;
-        height: 40px;
+        font-size: 13px !important;
+        color: #333 !important;
+        font-weight: 500 !important;
+        line-height: 1.35 !important;
+        margin-bottom: 5px !important;
+        height: 35px !important;
         overflow: hidden;
+        text-align: center !important;
         text-decoration: none !important;
+        display: block;
+        width: 100%;
+    }
+
+    .product-slider-wrapper[data-section-id="ads-20"] .product-details--title span {
+        font-size: 13px !important;
+        color: #333 !important;
+        font-weight: 500 !important;
+        text-align: center !important;
     }
 
     .product-slider-wrapper[data-section-id="ads-20"] .offer_price {
-        font-size: 15px;
-        font-weight: 700;
-        color: #111827;
-        margin-bottom: 10px;
+        font-size: 18px !important;
+        font-weight: 900 !important;
+        color: #111 !important;
+        margin-bottom: 8px !important;
+        text-align: center !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 4px;
+        width: 100%;
+    }
+
+    .product-slider-wrapper[data-section-id="ads-20"] .offer_price span {
+        font-size: 18px !important;
+        font-weight: 900 !important;
+        color: #111 !important;
+        text-align: center !important;
     }
 
     .product-slider-wrapper[data-section-id="ads-20"] .add-to-cart.cart-slider-btn,
-    .product-slider-wrapper[data-section-id="ads-20"] .add-to-cart.cart-slider-btn:hover,
-    .product-slider-wrapper[data-section-id="ads-20"] .add-to-cart.cart-slider-btn:active,
-    .product-slider-wrapper[data-section-id="ads-20"] .add-to-cart.cart-slider-btn:focus {
-        background-color: #ECF8F7;
-        border-color: #ECF8F7;
-        color: #007C4B;
-    }
-
     .product-slider-wrapper[data-section-id="ads-20"] .add-to-cart {
-        background-color: #00b074;
-        color: #ffffff;
-        border: none;
-        border-radius: 8px;
-        padding: 9px 12px;
-        font-size: 13px;
-        font-weight: 700;
-        cursor: pointer;
-        transition: background-color 0.2s ease;
+        background-color: #10b981 !important;
+        color: #ffffff !important;
+        border: none !important;
+        border-radius: 5px !important;
+        padding: 10px 0 !important;
+        font-family: 'Tajawal', sans-serif !important;
+        font-size: 14px !important;
+        font-weight: bold !important;
+        width: 100% !important;
+        cursor: pointer !important;
+        transition: background-color 0.3s ease !important;
+        text-align: center !important;
     }
 
+    .product-slider-wrapper[data-section-id="ads-20"] .add-to-cart.cart-slider-btn:hover,
     .product-slider-wrapper[data-section-id="ads-20"] .add-to-cart:hover {
-        background-color: #009461;
+        background-color: #059669 !important;
+        color: #ffffff !important;
     }
 
     /* أزرار التنقل الدائرية يمين وشمال الكاروسيل (ads-20) */
@@ -3268,7 +3431,7 @@ body.dark-mode .breadcrumb .current {
     /* تنسيق قسم أفضل منتجات العناية بالشعر (ads-18) كـ Carousel أفقي */
     .product-slider-wrapper[data-section-id="ads-18"],
     .product-slider-wrapper[data-section-id="ads-18"] * {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Tajawal', sans-serif;
     }
 
     .product-slider-wrapper[data-section-id="ads-18"] {
@@ -3379,34 +3542,44 @@ body.dark-mode .breadcrumb .current {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
         background-color: #ffffff;
-        border-radius: 10px;
+        border: 1px solid #f5f5f5;
+        border-radius: 8px;
         padding: 10px;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        text-align: center;
+        transition: 0.3s;
+        box-sizing: border-box;
     }
 
     .product-slider-wrapper[data-section-id="ads-18"] .item_content:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        transform: none;
     }
 
     .product-slider-wrapper[data-section-id="ads-18"] .product-slider-wrapper .item .image {
         position: relative;
-        background-color: #f5f6f8;
-        border-radius: 8px;
-        padding: 10px;
-        margin-bottom: 12px;
+        background-color: transparent !important;
+        background: transparent !important;
+        border-radius: 0;
+        padding: 0;
+        margin-bottom: 10px;
         text-align: center;
+        height: 120px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .product-slider-wrapper[data-section-id="ads-18"] .product-slider-wrapper .item .image img {
-        aspect-ratio: 1 / 1;
         width: 100%;
-        height: auto;
-        max-height: 155px;
-        object-fit: contain;
+        height: 120px !important;
+        max-height: 120px !important;
+        object-fit: contain !important;
         display: block;
         margin: 0 auto;
+        aspect-ratio: auto !important;
     }
 
     .product-slider-wrapper[data-section-id="ads-18"] .item_desc {
@@ -3414,58 +3587,89 @@ body.dark-mode .breadcrumb .current {
         flex-direction: column;
         flex: 1;
         justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 100%;
     }
 
     .product-slider-wrapper[data-section-id="ads-18"] .item_desc a,
     .product-slider-wrapper[data-section-id="ads-18"] .item_desc a:hover,
-    .product-slider-wrapper[data-section-id="ads-18"] .separator,
+    .product-slider-wrapper[data-section-id="ads-18"] .separator {
+        text-decoration: none !important;
+        border-bottom: none !important;
+        text-align: center !important;
+        width: 100%;
+        display: block;
+    }
+
     .product-slider-wrapper[data-section-id="ads-18"] .product-details--title,
     .product-slider-wrapper[data-section-id="ads-18"] .product-details--title span {
         text-decoration: none !important;
         border-bottom: none !important;
+        text-align: center !important;
     }
 
     .product-slider-wrapper[data-section-id="ads-18"] .product-details--title {
-        font-size: 14px;
-        color: #444;
-        font-weight: 600;
-        line-height: 1.4;
-        margin-bottom: 10px;
-        height: 40px;
+        font-size: 13px !important;
+        color: #333 !important;
+        font-weight: 500 !important;
+        line-height: 1.35 !important;
+        margin-bottom: 5px !important;
+        height: 35px !important;
         overflow: hidden;
+        text-align: center !important;
         text-decoration: none !important;
+        display: block;
+        width: 100%;
+    }
+
+    .product-slider-wrapper[data-section-id="ads-18"] .product-details--title span {
+        font-size: 13px !important;
+        color: #333 !important;
+        font-weight: 500 !important;
+        text-align: center !important;
     }
 
     .product-slider-wrapper[data-section-id="ads-18"] .offer_price {
-        font-size: 15px;
-        font-weight: 700;
-        color: #111827;
-        margin-bottom: 10px;
+        font-size: 18px !important;
+        font-weight: 900 !important;
+        color: #111 !important;
+        margin-bottom: 8px !important;
+        text-align: center !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 4px;
+        width: 100%;
+    }
+
+    .product-slider-wrapper[data-section-id="ads-18"] .offer_price span {
+        font-size: 18px !important;
+        font-weight: 900 !important;
+        color: #111 !important;
+        text-align: center !important;
     }
 
     .product-slider-wrapper[data-section-id="ads-18"] .add-to-cart.cart-slider-btn,
-    .product-slider-wrapper[data-section-id="ads-18"] .add-to-cart.cart-slider-btn:hover,
-    .product-slider-wrapper[data-section-id="ads-18"] .add-to-cart.cart-slider-btn:active,
-    .product-slider-wrapper[data-section-id="ads-18"] .add-to-cart.cart-slider-btn:focus {
-        background-color: #ECF8F7;
-        border-color: #ECF8F7;
-        color: #007C4B;
-    }
-
     .product-slider-wrapper[data-section-id="ads-18"] .add-to-cart {
-        background-color: #00b074;
-        color: #ffffff;
-        border: none;
-        border-radius: 8px;
-        padding: 9px 12px;
-        font-size: 13px;
-        font-weight: 700;
-        cursor: pointer;
-        transition: background-color 0.2s ease;
+        background-color: #10b981 !important;
+        color: #ffffff !important;
+        border: none !important;
+        border-radius: 5px !important;
+        padding: 10px 0 !important;
+        font-family: 'Tajawal', sans-serif !important;
+        font-size: 14px !important;
+        font-weight: bold !important;
+        width: 100% !important;
+        cursor: pointer !important;
+        transition: background-color 0.3s ease !important;
+        text-align: center !important;
     }
 
+    .product-slider-wrapper[data-section-id="ads-18"] .add-to-cart.cart-slider-btn:hover,
     .product-slider-wrapper[data-section-id="ads-18"] .add-to-cart:hover {
-        background-color: #009461;
+        background-color: #059669 !important;
+        color: #ffffff !important;
     }
 
     /* أزرار التنقل الدائرية يمين وشمال الكاروسيل (ads-18) */
@@ -3530,7 +3734,7 @@ body.dark-mode .breadcrumb .current {
     /* تنسيق قسم كل ما يحتاجه طفلك (ads-19) كـ Carousel أفقي */
     .product-slider-wrapper[data-section-id="ads-19"],
     .product-slider-wrapper[data-section-id="ads-19"] * {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Tajawal', sans-serif;
     }
 
     .product-slider-wrapper[data-section-id="ads-19"] {
@@ -3641,34 +3845,44 @@ body.dark-mode .breadcrumb .current {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
         background-color: #ffffff;
-        border-radius: 10px;
+        border: 1px solid #f5f5f5;
+        border-radius: 8px;
         padding: 10px;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        text-align: center;
+        transition: 0.3s;
+        box-sizing: border-box;
     }
 
     .product-slider-wrapper[data-section-id="ads-19"] .item_content:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        transform: none;
     }
 
     .product-slider-wrapper[data-section-id="ads-19"] .product-slider-wrapper .item .image {
         position: relative;
-        background-color: #f5f6f8;
-        border-radius: 8px;
-        padding: 10px;
-        margin-bottom: 12px;
+        background-color: transparent !important;
+        background: transparent !important;
+        border-radius: 0;
+        padding: 0;
+        margin-bottom: 10px;
         text-align: center;
+        height: 120px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .product-slider-wrapper[data-section-id="ads-19"] .product-slider-wrapper .item .image img {
-        aspect-ratio: 1 / 1;
         width: 100%;
-        height: auto;
-        max-height: 155px;
-        object-fit: contain;
+        height: 120px !important;
+        max-height: 120px !important;
+        object-fit: contain !important;
         display: block;
         margin: 0 auto;
+        aspect-ratio: auto !important;
     }
 
     .product-slider-wrapper[data-section-id="ads-19"] .item_desc {
@@ -3676,58 +3890,89 @@ body.dark-mode .breadcrumb .current {
         flex-direction: column;
         flex: 1;
         justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 100%;
     }
 
     .product-slider-wrapper[data-section-id="ads-19"] .item_desc a,
     .product-slider-wrapper[data-section-id="ads-19"] .item_desc a:hover,
-    .product-slider-wrapper[data-section-id="ads-19"] .separator,
+    .product-slider-wrapper[data-section-id="ads-19"] .separator {
+        text-decoration: none !important;
+        border-bottom: none !important;
+        text-align: center !important;
+        width: 100%;
+        display: block;
+    }
+
     .product-slider-wrapper[data-section-id="ads-19"] .product-details--title,
     .product-slider-wrapper[data-section-id="ads-19"] .product-details--title span {
         text-decoration: none !important;
         border-bottom: none !important;
+        text-align: center !important;
     }
 
     .product-slider-wrapper[data-section-id="ads-19"] .product-details--title {
-        font-size: 14px;
-        color: #444;
-        font-weight: 600;
-        line-height: 1.4;
-        margin-bottom: 10px;
-        height: 40px;
+        font-size: 13px !important;
+        color: #333 !important;
+        font-weight: 500 !important;
+        line-height: 1.35 !important;
+        margin-bottom: 5px !important;
+        height: 35px !important;
         overflow: hidden;
+        text-align: center !important;
         text-decoration: none !important;
+        display: block;
+        width: 100%;
+    }
+
+    .product-slider-wrapper[data-section-id="ads-19"] .product-details--title span {
+        font-size: 13px !important;
+        color: #333 !important;
+        font-weight: 500 !important;
+        text-align: center !important;
     }
 
     .product-slider-wrapper[data-section-id="ads-19"] .offer_price {
-        font-size: 15px;
-        font-weight: 700;
-        color: #111827;
-        margin-bottom: 10px;
+        font-size: 18px !important;
+        font-weight: 900 !important;
+        color: #111 !important;
+        margin-bottom: 8px !important;
+        text-align: center !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 4px;
+        width: 100%;
+    }
+
+    .product-slider-wrapper[data-section-id="ads-19"] .offer_price span {
+        font-size: 18px !important;
+        font-weight: 900 !important;
+        color: #111 !important;
+        text-align: center !important;
     }
 
     .product-slider-wrapper[data-section-id="ads-19"] .add-to-cart.cart-slider-btn,
-    .product-slider-wrapper[data-section-id="ads-19"] .add-to-cart.cart-slider-btn:hover,
-    .product-slider-wrapper[data-section-id="ads-19"] .add-to-cart.cart-slider-btn:active,
-    .product-slider-wrapper[data-section-id="ads-19"] .add-to-cart.cart-slider-btn:focus {
-        background-color: #ECF8F7;
-        border-color: #ECF8F7;
-        color: #007C4B;
-    }
-
     .product-slider-wrapper[data-section-id="ads-19"] .add-to-cart {
-        background-color: #00b074;
-        color: #ffffff;
-        border: none;
-        border-radius: 8px;
-        padding: 9px 12px;
-        font-size: 13px;
-        font-weight: 700;
-        cursor: pointer;
-        transition: background-color 0.2s ease;
+        background-color: #10b981 !important;
+        color: #ffffff !important;
+        border: none !important;
+        border-radius: 5px !important;
+        padding: 10px 0 !important;
+        font-family: 'Tajawal', sans-serif !important;
+        font-size: 14px !important;
+        font-weight: bold !important;
+        width: 100% !important;
+        cursor: pointer !important;
+        transition: background-color 0.3s ease !important;
+        text-align: center !important;
     }
 
+    .product-slider-wrapper[data-section-id="ads-19"] .add-to-cart.cart-slider-btn:hover,
     .product-slider-wrapper[data-section-id="ads-19"] .add-to-cart:hover {
-        background-color: #009461;
+        background-color: #059669 !important;
+        color: #ffffff !important;
     }
 
     /* أزرار التنقل الدائرية يمين وشمال الكاروسيل (ads-19) */
@@ -3941,4 +4186,42 @@ body.dark-mode .breadcrumb .current {
     padding: 44px 20px 24px;
     min-height: auto;
   }
+}
+
+/* تنسيق الوضع الليلي لكروت الأقسام السفلية (ads-45, ads-17, ads-48, ads-20, ads-18, ads-19) */
+body.dark-mode [data-section-id="ads-45"] .item_content,
+body.dark-mode [data-section-id="ads-17"] .item_content,
+body.dark-mode [data-section-id="ads-48"] .item_content,
+body.dark-mode [data-section-id="ads-20"] .item_content,
+body.dark-mode [data-section-id="ads-18"] .item_content,
+body.dark-mode [data-section-id="ads-19"] .item_content {
+  background-color: #1e1e1e !important;
+  border-color: #333 !important;
+}
+
+body.dark-mode [data-section-id="ads-45"] .product-details--title,
+body.dark-mode [data-section-id="ads-45"] .product-details--title span,
+body.dark-mode [data-section-id="ads-45"] .offer_price,
+body.dark-mode [data-section-id="ads-45"] .offer_price span,
+body.dark-mode [data-section-id="ads-17"] .product-details--title,
+body.dark-mode [data-section-id="ads-17"] .product-details--title span,
+body.dark-mode [data-section-id="ads-17"] .offer_price,
+body.dark-mode [data-section-id="ads-17"] .offer_price span,
+body.dark-mode [data-section-id="ads-48"] .product-details--title,
+body.dark-mode [data-section-id="ads-48"] .product-details--title span,
+body.dark-mode [data-section-id="ads-48"] .offer_price,
+body.dark-mode [data-section-id="ads-48"] .offer_price span,
+body.dark-mode [data-section-id="ads-20"] .product-details--title,
+body.dark-mode [data-section-id="ads-20"] .product-details--title span,
+body.dark-mode [data-section-id="ads-20"] .offer_price,
+body.dark-mode [data-section-id="ads-20"] .offer_price span,
+body.dark-mode [data-section-id="ads-18"] .product-details--title,
+body.dark-mode [data-section-id="ads-18"] .product-details--title span,
+body.dark-mode [data-section-id="ads-18"] .offer_price,
+body.dark-mode [data-section-id="ads-18"] .offer_price span,
+body.dark-mode [data-section-id="ads-19"] .product-details--title,
+body.dark-mode [data-section-id="ads-19"] .product-details--title span,
+body.dark-mode [data-section-id="ads-19"] .offer_price,
+body.dark-mode [data-section-id="ads-19"] .offer_price span {
+  color: #f1f1f1 !important;
 }
